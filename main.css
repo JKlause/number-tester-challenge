@@ -11,8 +11,16 @@ h1 {
     font-size: 50px;
 }
 
-h3 {
-    
+.even {
+    width: 266px;
+    display: block;
+    text-align: center
+}
+
+.odd {
+    display: block;
+    width: 136px;
+    text-align: center
 }
 
 .hidden {
