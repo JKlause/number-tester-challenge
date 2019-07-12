@@ -1,19 +1,18 @@
-/* 
+
+import isEven from '../is-even.js';
 const test = QUnit.test;
 
-test('adds two numbers', function(assert) {
+test('is even', function(assert) {
     //Arrange
     // Set up your parameters and expectations
     const x = 3;
-    const y = 4;
-    const expected = 7;
+    const expected = true;
 
     //Act 
     // Call the function you're testing and set the result to a const
-    const sum = add(x, y);
+    const remainder = isEven(x);
 
     //Assert
     // What should the result be?
-    assert.equal(sum, expected);
-}); */
-
+    assert.equal(remainder, expected);
+});
