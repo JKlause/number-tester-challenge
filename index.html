@@ -10,13 +10,14 @@
 </head>
 <body>
     <h1>Is My Number Even Or Odd?</h1>
-    <section>
-        
-        Type a number here -> <input id="user-input" type="number">        
+    
+    <section>  
+        Type a number here -> <input id="user-input" type="number" minlength="1">        
         <button id="button" type="button">Submit</button>
-        
     </section>
-    <h3 id="zero-message" class="hidden odd">ZERO<br>isn't a number<br>DUMB ASS!!</h3>
+
+    <h3 id="no-input-message" class="hidden even">Umm, you forgot something...</h3>
+    <h3 id="zero-message" class="hidden even">ZERO<br>can't be even or odd,<br>DUMB ASS!!</h3>
     <h3 id="even-message" class="hidden even">OCD much?<br>Your number is EVEN... and perfectly level!!</h2>
     <h3 id="odd-message" class="hidden odd">"Bark!" "Hoot!"<br>Your number is as ODD as this couple!!</h2>
     <img id="even-image" class="hidden" src="https://upload.wikimedia.org/wikipedia/commons/b/ba/DetalleNivelDeBurbuja.jpg" alt="An even level">
