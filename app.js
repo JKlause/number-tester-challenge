@@ -23,15 +23,15 @@ button.onclick = function() {
         zeroMsg.classList.add('hidden');
         noInputMsg.classList.remove('hidden');
     }    //if user enters 0 
-      else if (Number(userInput.value) === 0) {
+    else if(Number(userInput.value) === 0) {
         evenImage.classList.add('hidden');
         evenMsg.classList.add('hidden');
         oddImage.classList.add('hidden');
         oddMsg.classList.add('hidden');
         zeroMsg.classList.remove('hidden');
         noInputMsg.classList.add('hidden');
-    }    //if user enters a number
-      else {  
+    }   //if user enters a number
+    else {  
         const result = isEven(Number(userInput.value));
         if(result === true) {
             evenImage.classList.remove('hidden');
@@ -48,5 +48,5 @@ button.onclick = function() {
             zeroMsg.classList.add('hidden');
             noInputMsg.classList.add('hidden');
         }
-    };
+    }
 }; 
